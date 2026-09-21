@@ -1,6 +1,6 @@
 # reptyr-rs
 
-Reparent a running program to a new terminal — a Rust rewrite of
+Reparent a running program to a new terminal; a Rust rewrite of
 [reptyr](https://github.com/nelhage/reptyr).
 
 Started a long-running process over SSH but have to leave and don't want
@@ -8,7 +8,7 @@ to interrupt it? Start a `screen`/`tmux` session, use `reptyr-rs` to grab
 the process, and kill the SSH session on your way out.
 
 Unlike simpler tools (`retty`), reptyr-rs moves the process's
-**controlling terminal**, not just its file descriptors — so job control
+**controlling terminal**, not just its file descriptors. So job control
 (`^C`, `^Z`) and window-size propagation keep working.
 
 ## Features
