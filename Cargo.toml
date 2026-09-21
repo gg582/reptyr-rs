@@ -1,0 +1,12 @@
+[package]
+name = "reptyr-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Reparent a running program to a new terminal (a Rust rewrite of reptyr)"
+license = "MIT"
+
+[dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 2
